@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/signupPIC"
+        android:layout_width="505dp"
+        android:layout_height="417dp"
+        android:src="@drawable/mobile_login_pana_1"
+        tools:layout_editor_absoluteX="-30dp"
+        tools:layout_editor_absoluteY="128dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/jblack"
+        android:text="Start Manage Your Task With"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="89dp"
+        tools:layout_editor_absoluteY="545dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/jblack"
+        android:text="XXXXX"
+        android:textAlignment="center"
+        android:textColor="#646FD4"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="184dp"
+        tools:layout_editor_absoluteY="586dp" />
+
+    <Button
+        android:id="@+id/signupBTN"
+        android:layout_width="240dp"
+        android:layout_height="40dp"
+        android:backgroundTint="#646FD4"
+        android:text="Sign Up"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.512"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.831" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="276dp"
+        android:layout_height="16dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:fontFamily="@font/rblack"
+        android:text="Already have an account?"
+        android:textColor="#8D93AB"
+        android:textSize="13sp"
+        tools:layout_editor_absoluteX="120dp"
+        tools:layout_editor_absoluteY="677dp" />
+
+    <TextView
+        android:id="@+id/loginBTN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="true"
+        android:fontFamily="@font/rblack"
+        android:padding="10dp"
+        android:text="LOGIN"
+        android:textColor="#646FD4"
+        tools:layout_editor_absoluteX="269dp"
+        tools:layout_editor_absoluteY="666dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="20dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
