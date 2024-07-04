@@ -101,7 +101,7 @@
         android:layout_marginStart="42dp"
         android:layout_marginTop="20dp"
         android:layout_marginEnd="41dp"
-        android:text="by signing up you agree to our terms & CONDITIONS of use and privacy policy."
+        android:text="by signing up you agree to our terms and CONDITIONS of use and privacy policy."
         android:textColor="#B9B8FA"
         android:textSize="12sp"
         app:layout_constraintEnd_toEndOf="parent"
