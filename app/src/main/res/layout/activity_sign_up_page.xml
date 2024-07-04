@@ -29,7 +29,6 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="96dp"
         android:layout_marginEnd="97dp"
-        android:font="@font/Jlight"
         android:text=" welcome to XXXXXXX app \nsign up to get started."
         android:textAlignment="center"
         android:textColor="#B9B8FA"
