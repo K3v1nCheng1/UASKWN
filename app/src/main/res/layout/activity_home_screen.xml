@@ -8,12 +8,40 @@
     tools:context=".HomeScreen">
     <!-- Auto layout, variables, and unit scale are not yet supported -->
 
+    <!-- Auto layout, variables, and unit scale are not yet supported -->
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="269dp"
+        android:layout_height="268dp"
+        android:layout_marginStart="172dp"
+        android:layout_marginBottom="64dp"
+        android:src="@drawable/ellipse_10"
+        app:layout_constraintBottom_toTopOf="@+id/frame_94"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="329dp"
+        android:layout_height="284dp"
+        android:layout_marginEnd="124dp"
+        android:layout_marginBottom="36dp"
+        android:src="@drawable/ellipse_9"
+        app:layout_constraintBottom_toTopOf="@+id/frame_93"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.142" />
+
     <TextView
         android:id="@+id/textView9"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="85dp"
-        android:layout_marginTop="122dp"
+        android:layout_marginTop="184dp"
         android:layout_marginEnd="86dp"
         android:fontFamily="@font/jblack"
         android:text="You have X tasks today!"
@@ -21,9 +49,10 @@
         android:textColor="#363636"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-    <!-- Auto layout, variables, and unit scale are not yet supported -->
+
     <RelativeLayout
         android:id="@+id/frame_69"
         android:layout_width="280dp"
@@ -31,11 +60,12 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
         android:layout_marginStart="65dp"
-        android:layout_marginTop="74dp"
+        android:layout_marginTop="176dp"
         android:layout_marginEnd="66dp"
         android:background="@drawable/frame_69"
         android:elevation="4dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView9">
 
@@ -66,28 +96,38 @@
         android:id="@+id/frame_93"
         android:layout_width="93dp"
         android:layout_height="34dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="26dp"
+        android:layout_marginBottom="49dp"
         android:background="@drawable/frame_92"
         android:elevation="4dp"
-        tools:layout_editor_absoluteX="40dp"
-        tools:layout_editor_absoluteY="306dp" />
+        app:layout_constraintBottom_toTopOf="@+id/frame_69"
+        app:layout_constraintEnd_toStartOf="@+id/frame_92"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <RelativeLayout
         android:id="@+id/frame_94"
         android:layout_width="93dp"
         android:layout_height="34dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginEnd="38dp"
+        android:layout_marginBottom="49dp"
         android:background="@drawable/frame_92"
         android:elevation="4dp"
-        tools:layout_editor_absoluteX="280dp"
-        tools:layout_editor_absoluteY="306dp" />
+        app:layout_constraintBottom_toTopOf="@+id/frame_69"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/frame_92" />
 
     <RelativeLayout
         android:id="@+id/frame_92"
         android:layout_width="93dp"
         android:layout_height="34dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginBottom="49dp"
         android:background="@drawable/frame_92"
         android:elevation="4dp"
-        tools:layout_editor_absoluteX="159dp"
-        tools:layout_editor_absoluteY="306dp" />
+        app:layout_constraintBottom_toTopOf="@+id/frame_69"
+        app:layout_constraintStart_toEndOf="@+id/frame_93" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
