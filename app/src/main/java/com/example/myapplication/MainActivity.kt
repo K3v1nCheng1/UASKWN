@@ -1,6 +1,8 @@
 package com.example.myapplication
 
+import android.content.Intent
 import android.os.Bundle
+import android.widget.Button
 import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
@@ -19,6 +21,16 @@ class MainActivity : AppCompatActivity() {
         }
         val loginTextView = findViewById<TextView>(R.id.loginBTN)
         loginTextView.setOnClickListener {// Lakukan tindakan login di sini
+        }
+
+        // Find the button by its ID
+        val buttonNavigate: Button = findViewById(R.id.signupBTN)
+
+        // Set an OnClickListener on the button
+        buttonNavigate.setOnClickListener {
+            // Create an Intent to start SecondActivity
+            val intent = Intent(this, SignUpPage::class.java)
+            startActivity(intent)
         }
     }
 
