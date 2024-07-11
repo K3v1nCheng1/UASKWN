@@ -24,11 +24,10 @@ class MainActivity : AppCompatActivity() {
 
         val loginTextView = findViewById<TextView>(R.id.loginBTN)
         loginTextView.setOnClickListener {
-            val intent1 = Intent(this, HomeScreen::class.java)
+            val intent1 = Intent(this, LogInPage::class.java)
             startActivity(intent1)
         }
 
-        // Find the button by its ID
         val buttonNavigate: Button = findViewById(R.id.signupBTN)
         buttonNavigate.setOnClickListener {
             val intent = Intent(this, SignUpPage::class.java)

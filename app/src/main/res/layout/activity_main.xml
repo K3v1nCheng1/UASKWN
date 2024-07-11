@@ -89,22 +89,18 @@
         android:id="@+id/loginBTN"
         android:layout_width="wrap_content"
         android:layout_height="48dp"
-        android:layout_marginStart="9dp"
-        android:layout_marginTop="3dp"
-        android:layout_marginEnd="98dp"
+        android:layout_marginStart="7dp"
+        android:layout_marginEnd="76dp"
         android:layout_marginBottom="40dp"
         android:background="#003A2727"
         android:clickable="true"
-        android:focusable="true"
         android:fontFamily="@font/rblack"
         android:padding="10dp"
         android:text="LOGIN"
         android:textColor="#646FD4"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.486"
-        app:layout_constraintStart_toEndOf="@+id/textView3"
-        app:layout_constraintTop_toBottomOf="@+id/signupBTN" />
+        app:layout_constraintStart_toEndOf="@+id/textView3" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline"
