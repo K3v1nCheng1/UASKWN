@@ -1,7 +1,9 @@
 package com.example.myapplication
 
+import android.content.Intent
 import android.graphics.Color
 import android.os.Bundle
+import android.widget.Button
 import android.widget.EditText
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
@@ -18,17 +20,20 @@ class SignUpPage : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
-        // EditText fields
+
         val yourNameEditText = findViewById<EditText>(R.id.yourname)
         val emailSignInEditText = findViewById<EditText>(R.id.emailsignin)
         val inputPwEditText = findViewById<EditText>(R.id.inputpw)
 
-        // Clear text on focus
         clearTextOnFocus(yourNameEditText)
         clearTextOnFocus(emailSignInEditText)
         clearTextOnFocus(inputPwEditText)
 
-
+        val buttonNavigate: Button = findViewById(R.id.loginBTN)
+        buttonNavigate.setOnClickListener {
+            val intent = Intent(this, LogInPage::class.java)
+            startActivity(intent)
+        }
     }
     private fun clearTextOnFocus(editText: EditText) {
         editText.setOnFocusChangeListener { v, hasFocus ->
